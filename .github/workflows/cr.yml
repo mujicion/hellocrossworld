@@ -1,15 +1,12 @@
 # .github/workflows/cr.yml 파일 생성
-
 name: Code Review
-
 permissions:
   contents: read
   pull-requests: write
-
 on:
-  pull_request:
-    types: [opened, synchronize]
-
+  push:
+    branches:
+      - main  # 또는 다른 브랜치 이름으로 변경 가능
 jobs:
   test:
     runs-on: ubuntu-latest
