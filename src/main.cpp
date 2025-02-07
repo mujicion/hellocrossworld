@@ -4,6 +4,8 @@
 #include "messages.h"
 
 int main() {
+    debug_log("Entering main()");
+
     std::vector<std::string> messages;
     messages.push_back(hello());
     messages.push_back(world());
@@ -16,5 +18,6 @@ int main() {
     }
     std::cout << std::endl;
 
+    debug_log("Exiting main()");
     return 0;
 }

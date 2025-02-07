@@ -18,5 +18,5 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          LANGUAGE: "Korean"
+          LANGUAGE: "English"
           EXCLUDE_PATHS: "**/pnpm-lock.yaml"
