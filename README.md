@@ -14,5 +14,14 @@
 1. ARM용 도커 만들기
 1. ARM용으로 크로스 컴파일 하기
 
-## 참조링크
+## 참고사항
+* Toolchain : compiler(gcc), archive(ar), link loader(ld)
+* Pull Request 과정
+    1. 개인 저장소로 fork
+    1. 개인 branch 만들기
+    1. 소스 수정
+    1. 소스 commit
+    1. 소스 push
+    1. Pull Request 생성
+    1. Review 후 Merge
 * https://github.com/truongnh1992/gemini-ai-code-reviewer
