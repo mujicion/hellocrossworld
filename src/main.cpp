@@ -1,14 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
-
-std::string hello() {
-    return "Hello";
-}
-
-std::string world() {
-    return "World";
-}
+#include "messages.h"
 
 int main() {
     std::vector<std::string> messages;
