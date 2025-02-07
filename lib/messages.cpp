@@ -2,7 +2,7 @@
 #include <iostream>
 
 void debug_log(const std::string& message) {
-    std::cout << message << std::endl;
+    std::cerr << message << std::endl;
 }
 
 std::string hello() {
