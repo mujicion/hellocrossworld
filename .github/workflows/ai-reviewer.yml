@@ -32,7 +32,7 @@ jobs:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
         {
-        echo 'REVIEW&lt;<EOF'
+        echo 'REVIEW<<EOF'
         gptscript --default-model='gpt-4o-mini' codereview.gpt --PR_URL=${{ env.PR_URL }}
         echo EOF
         } >> "$GITHUB_ENV"   
@@ -41,7 +41,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
-        gh pr comment ${{ github.event.pull_request.number }} --body "$REVIEW"
+        gh pr comment ${{ env.PR_NUMBER }} --body "$REVIEW"
 
     - name: Set PR Status Fail
       if: contains(env.REVIEW, 'Require Changes')
