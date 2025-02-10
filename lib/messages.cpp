@@ -10,6 +10,10 @@ std::string hello() {
     return "Hello";
 }
 
+std::string cross() {
+    debug_log("Entering cross()");
+    return "Cross";
+}
 std::string world() {
     debug_log("Entering world()");
     return "World";

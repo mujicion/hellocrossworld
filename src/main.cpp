@@ -7,7 +7,7 @@ int main() {
     debug_log("Entering main()");
 
     std::vector<std::string> messages;
-    messages = {hello(), world()};
+    messages = {hello(), cross(), world()};
 
     for (auto it = messages.begin(); it != messages.end(); ++it) {
         std::cout << *it;
