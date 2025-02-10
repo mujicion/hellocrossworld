@@ -33,7 +33,7 @@ jobs:
       run: |
         {
         echo 'REVIEW&lt;<EOF'
-        gptscript codereview.gpt --PR_URL=${{ env.PR_URL }}
+        gptscript --default-model='gpt-4o-mini' codereview.gpt --PR_URL=${{ env.PR_URL }}
         echo EOF
         } >> "$GITHUB_ENV"   
 
